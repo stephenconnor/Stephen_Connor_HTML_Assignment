@@ -1,0 +1,112 @@
+/* Imports Bootstrap.css */
+@import url(bootstrap.css);
+
+body {
+background: -webkit-radial-gradient(#680000, #880000, #FF0000); /* Safari */
+background: -o-radial-gradient(#680000, #880000, #FF0000); /* For Opera 11.1 to 12.0 */
+background: -moz-radial-gradient(#680000, #880000, #FF0000); /* For Firefox 3.6 to 15 */
+background: radial-gradient(#680000, #880000, #FF0000); /* Standard syntax */
+}
+
+/* formats grid colums to full with samll padding amount */
+.container-fluid {
+padding: 20px;
+}
+
+/* formats left nav column, overlap hides some test for  */
+.sidebar-nav {
+background-color: #C0C0C0;
+color: #000000;
+font-family: 'Hammersmith One', sans-serif;
+font-style: italic;
+padding-right: 5px;
+padding-left: 5px;
+width: 100%;
+overflow:hidden;
+}
+
+    
+/* formats sub-list(external links) on side navbar */
+ul {
+    list-style:circle;
+    padding-left: 25px;
+}
+
+
+/* formats colours of primary buttons */
+.btn-primary {
+background-color: #FF0000;
+}
+
+/* fromat click on image text on Road Cycling page */
+.carouselDirectionText {
+font-weight:200;
+font-style: oblique;
+}
+
+/* formats caption on carousel images Motorcycle Page */
+.carousel-caption {
+font-family: 'Hammersmith One', sans-serif;
+font-style: italic;
+position: center;
+}
+
+
+#sourceLighterText {
+font-weight:200;
+font-style: oblique;
+}
+
+/* formats carousel background on Road Cycling page */
+.well {
+border: 20px;
+background: -webkit-radial-gradient(#680000, #880000, #FF0000); /* Safari */
+background: -o-radial-gradient(#680000, #880000, #FF0000); /* For Opera 11.1 to 12.0 */
+background: -moz-radial-gradient(#680000, #880000, #FF0000); /* For Firefox 3.6 to 15 */
+background: radial-gradient(#680000, #880000, #FF0000); /* Standard syntax */
+padding-right: 20px;
+padding-left: 20px;
+margin-right: 30px;
+margin-left: 40px;
+}
+
+
+/* edits location of carousel items on road cycling page */
+.position-change {
+padding-left: 50px;
+}
+
+ 
+/* foramts postions of carousel controls on Road Cycling page */
+.carousel-control {
+position: absolute; 
+top: 45%;
+bottom: 45%;
+background-color:#C0C0C0;
+opacity: 0.35;
+width: 25%;
+font-size: 40px;
+color: #ffffff;
+}
+
+/* resize motorcyle images to consitent width with carousel */
+/*.motorcycle-img > img {
+min-width: 100%;
+}*/
+
+
+/* sizes thumbanil images on rugby page*/
+.thumbnail img {
+min-height: 300px;
+max-height: 300px;
+}
+
+
+/* contact form text label colours */
+.panel-body > form {
+color: #C0C0C0
+}
+
+
+
+

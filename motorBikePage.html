@@ -1,0 +1,341 @@
+<!-- ---------------------------------------------
+Program     : motorBikePage.html - webpage
+Written By  : Stephen Connor    
+Date        : 25/01/2014
+Decription  : Webpage - top & right nabar, carousel, collapsing panels
+Version     : 
+----------------------------------------------- -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stephen's Blog about Motocycling, Road Cycling & Rugby" />
+    <link rel="stylesheet" type="text/css" href="bootstrap-responisve.css" /> 
+    <link rel="stylesheet" tyep="text/css" href="html_stylesheet.css" /> 
+
+	<title>
+		Stephen's Blog
+	</title>
+    
+    <style></style>
+    
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse navbar-static-top"> <!-- static collapsing navigation bar across top of page -->
+  <div class="navbar-inner">
+      <a href="homePage.html" class="navbar-brand"> Stephen's Blog</a>
+  	<button class="navbar-toggle" data-toggle="collapse" data-target=".navBarCollapse">
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  	</button>
+    <div class="collapse navbar-collapse navBarCollapse navbar-right">  
+        <ul class="nav navbar-nav">  
+  			<li><a class="Home" href="homePage.html">Home</a></li>  
+  		    <li class="active"><a href="motorBikePage.html">Motorbikes</a></li>  
+  		    <li><a href="bikePage.html">Road Cycling</a></li>  
+  		    <li><a href="rugbyPage.html">Rugby  </a></li>
+            <li><a href="contactPage.html">Contact Us</a></li>
+            <br/>
+            <br/>
+		</ul> 
+	</div> 
+  </div>
+</div> <!-- navbar end -->
+
+
+<div class="container-fluid">  <!--  full width container for page content --> 
+    
+         <div class="row"> <!-- firet row of main page content -->
+           
+            <div class="twocol col col-sm-2"> <!-- left side page section 2 columns wide -->
+                
+                <nav class="navbar navbar-default sidebar-nav" role="navigation"> <!-- collapsing sidebar menu -->
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse5"                                         href="#collapse5"> <!-- button control for collapsed navbar -->
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+            
+                    <div class="collapse navbar-collapse" id="collapse5" class="sidebar-nav">
+                        <div class="panel-heading">Site Navigation</div>
+                        <ul class="nav nav-stacked">
+                            <li><a href="homePage.html">Home</a></li>
+                            <li class="active"><a href="motorBikePage.html">Motorbikes</a></li>
+                            <ul>
+                            <li><a href="http://www.visordown.com/">VisorDown</a></li>
+                            <li><a href="http://www.motorcyclenews.com/">MCN</a> </li>
+                            </ul>
+                            <li><a href="bikePage.html">Road Cycling</a></li>
+                            <li><a href="rugbyPage.html">Rugby</a></li>
+                            <li><a href="contactPage.html">Contact Us</a></li>              
+                        </ul>
+            
+            
+                    </div>
+                </nav><!-- end sidebar menu -->
+                 
+            </div><!-- end of left side page section 2 columns wide -->
+          
+        
+    
+             <div class="tencol col col-sm-10" > <!-- main page section 10 column wide page area -->
+            
+                            <!-- carousel with sliding images -->
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- carousel movement indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                              </ol>
+            
+                                      <!-- Wrapper for slides -->
+                                      <div class="carousel-inner">
+                                            <div class="item active  motorcycle-img">
+                                              <img src="Brutale%20800.jpg" alt="MV Augusta Brutale 800">
+                                              <div class="carousel-caption">
+                                                MV Augusta Brutale 800
+                                              </div>
+                                            </div>
+            
+                                            <div class="item  motorcycle-img">
+                                              <img src="F4%20RR.jpg" alt="MV Augusta F4 RR">
+                                              <div class="carousel-caption">
+                                                MV Augusta F4 RR
+                                              </div>
+                                            </div>
+               
+                                            <div class="item">
+                                              <img src="BMW_R_Nine_T-04.jpg" alt="BMW R NineT">
+                                              <div class="carousel-caption">
+                                                BMW R Nine T
+                                              </div>
+                                            </div>
+            
+                                            <div class="item  motorcycle-img">
+                                              <img src="R1.jpg" alt="Yamaha R1">
+                                              <div class="carousel-caption">
+                                                Yamaha R1
+                                              </div>
+                                            </div>
+                                    </div>
+                            </div><!-- end of carousel -->
+                        
+                            
+                            <div class="panel-group" id="myAccordion"> <!-- collapsing panels with triggering buttons and containing modals --> 
+                            
+                            <div class="panel panel-default"> <!-- collapsing panel 1 --> 
+                                <div class="panel-heading">
+                                 <button type="button" class="btn btn-danger" data-toggle="collapse" href="#collapse1" data-parent="#myAccordion">
+                                  <h4 class="panel-title">
+                                    <a>
+                                    MV Augusta Brutale 800
+                                    </a>
+                                  </h4>
+                                </button>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse">
+                                  <div class="panel-body"><p>
+                                                The new 800 engine offers increased power, torque and riding dynamics for the naked MV Agusta. The new adjustable suspension and the new advanced electronics package makes the Brutale 800 leader in its segment. Graphics and special colours accentuate the unmistakably lines of MV Agusta.
+                                            Brutale three-cylinder means handling, extreme agility, and absolute ease of use. Now with the new engine power and torque comparable to a 1.000cc, and with a weight of only 167 kg, the 800 Brutale offers an unique power to weight ratio. Aside from the new engine, the Brutale 800 offers a new adjustable suspension allowing the riders complete personalisation.
+                                            A dependable advanced electronics package unique within this category: MVICS (Motor & Vehicle Integrated Control System), the integrated management system of the vehicle, includes the first Full Ride by Wire with multi-map and integrated traction control. Offering optimised delivery at all engine speeds, maximum engine efficiency in terms of fuel consumption, and of course the opportunity to select different engine characteristics, choosing from the four available maps: three pre-sets, one personalised. Traction control also ensures safety and performance on any road or track surface, allowing the driver to concentrate entirely on riding. The three-cylinder engine, which debuted on the supersport F3 675, forms the basis for the technological progress in its class, thanks to exclusive technical solutions such as the counter-rotating crankshaft, used in MotoGP, but never before seen on a production bike. The frame performance is guaranteed, thanks to MV Agusta’ s unique mixed structure: the front section of steel tube trellis combined with two light aluminium alloy plates, and a sculpted single-arm rear suspension.Brutale 800 joins Brutale 675 with its increased performance, dynamics and untouchable MV Agusta style. A motorcycle capable of satisfying the most demanding of motorcycle enthusiasts. <p id="sourceLighterText"> source: http://www.mvagusta.it></p></p>
+                                     <!-- Modal trigger button, targets myModal 1 id-->
+                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal">
+                              Learn More!
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button btn-default" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">MV Auguta Brutale 800</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Learn more @ http://www.mvagusta.it/en/brutale800</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                    <a href="http://www.mvagusta.it/en/brutale800" class="btn btn-primary btn-default active" role="button">MV Augusta website </a>
+                                  </div><!-- set primary but as link -->
+                                </div><!--modal-content -->
+                              </div><!-- modal-dialog -->
+                            </div><!-- modal -->
+                                  </div>
+                                </div>
+                            </div> <!-- end collapsing panel 1 -->
+                 
+                 
+                            <div class="panel panel-default"> <!-- collapsing panel 2 --> 
+                                <div class="panel-heading">
+                                 <button type="button" class="btn btn-danger" data-toggle="collapse" href="#collapse2" data-parent="#myAccordion">
+                                  <h4 class="panel-title">
+                                    <a>
+                                    MV Augusta  RR
+                                    </a>
+                                  </h4>
+                                </button>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                   <p>The F4 continues to play an important part of the history of high performance motorcycling.
+                                It is the epitome of emotion, performance, and speed clothed in a uniquely desirable design.
+                                The new F4 is an important leap into the future, a technological revolution without limits.
+                                THE NEW MV AGUSTA F4. Crossing the border of imagination. The new F4 is our best yet, encompassing the latest technology and engine developments. A true state of the art masterpiece. After intense months of design, development and testing MV Agusta have redefined the characteristics of the F4 with an ambitious underlying goal to make the F4 the most advanced hypersport bike on the market. We achieved this by creating three versions to form the new range. Sharing the same distinctive DNA yet possessing different technical solutions to satisfy every rider. The F4 RR contains the most advanced engineering solutions, enhanced by a range of technical excellence to offer the complete control of the vehicle and maximum performance: chassis control utilizing vehicle inertia sensors, a unique engine control with Ride-By-Wire system, Öhlins electronic control suspension and steering damper as well as GP spec titanium connecting rods. The unique and comprehensive technology of the F4 RR has been extended to the versions F4 R & F4, which also share several aesthetic and functional innovations. These include a re-proportioned and lighter “signature” four exit silencer, new lightweight forged wheels and a new front spoiler integrated into the front fairing with DRL (Daylight Running Lights) that enhance the design, as well as the new tail light incorporating light guide technology. All complemented with completely new graphics and colors.
+                                These elements make the new F4 more advanced than ever before yet with total respect for the history of this iconic machine. Our objective was to create a vehicle that exceeded the expectations of customers based on a new technological platform, focused on electronics and its fundamental contribution improving power delivery of the engine and driving dynamics on the road and on the track. All this combined with a thorough review of the engine to provide competitive performance. <p id="sourceLighterText"> source: http://www.mvagusta.it</p></p>
+                                      
+                                       <!-- Modal trigger button, targets myModal2 id-->
+                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal2">
+                                              Learn More!
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button btn-default" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">MV Auguta F4 RR</h4>
+                                                  </div><!-- modal-content -->
+                                                  <div class="modal-body">
+                                                    <p>Learn more @http://www.mvagusta.it/en/f4/f4-r-my13</p>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                                    <a href="http://www.mvagusta.it/en/f4/f4-r-my13" class="btn btn-primary btn-default active" role="button">MV Augusta website                           </a>
+                                                  </div><!-- set primary but as link-->
+                                                <div><!-- modal-content -->
+                                                </div><!-- modal-dialog -->
+                                                </div><!-- modal -->
+                                                <br/>
+                                                </div>
+                                            </div>
+                                  </div>
+                                </div>
+                            </div>  <!-- end collapsing panel 2 -->
+                 
+                            
+                            <div class="panel panel-default"> <!-- collapsing panel 3 --> 
+                                <div class="panel-heading">
+                                 <button type="button" class="btn btn-danger" data-toggle="collapse" href="#collapse3" data-parent="#myAccordion">
+                                  <h4 class="panel-title">
+                                    <a>
+                                      BMW R NineT
+                                    </a>
+                                  </h4>
+                                 </button>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>BMW R nineT. Pure Riding.
+                                Motorcycling has always been a passionate pastime. For the past 90 years BMW Motorrad has been ensuring that this remains the same in the future, too. For those who like it pure and original, BMW Motorrad has now developed the perfect machine: the BMW R nineT. A motorcycle featuring purist design and numerous ways of customising it.
+                                BMW R nineT: Pure Authenticity.
+                                Riding a motorcycle and feeling free. The BMW R nineT combines this feeling with a casually cool look which, in spite of all the details, is unmistakably a member of the BMW family. Further criteria such as ride feel, design and sound lay the foundation for an independent, authentic lifestyle.
+                                BMW R nineT: Pure Customising
+                                The BMW R nineT is powered by an air/oil-cooled 2-cylinder 4-stroke flat twin engine. The instruments consisting of speedometer and rev counter hark back to historical times and emphasise the reduce-to-the max and light-touch visual appeal of the motorbike. A multifunction display is also integrated and provides the rider with useful information. The BMW R nineT is equipped with an upside down fork at the front and with the BMW Motorrad Paralever at the rear. However, the nineT does not only stand out due to its reductive design. The nineT offers great options for individualisation. No customizing wish is left unfilled. For example there is the removable rear frame, enough space for 6 inch rims and many other options. Even though the BMW R nineT offers so many modification opportunities it remains a real BMW motorcycle from a technical point of view. Standard-fitted ABS ensures highest-degree safety for the nineT, too.
+                                BMW R nineT. Pure Lifestyle.
+                                Pure passion, pure design, pure riding pleasure. This is what makes the BMW R nineT so essential for the classic enthusiast. Modify, ride, have fun. The nineT leaves nothing to be desired with regard to variability. Design your motorcycle, design your life. One name, one purist lifestyle:
+                                BMW R nineT. <p id="sourceLighterText"> source: http://www.bmw-motorrad.com</p></p>
+                                      
+                                      <!-- Modal trigger button, targets myModal3 id-->
+                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal3">
+                                              Learn More!
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button btn-default" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">BMW R NineT</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <p>Learn more @http://www.bmw-motorrad.com/com/en/fascination/nineT/main.html</p>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                                    <a href="http://www.bmw-motorrad.com/com/en/fascination/nineT/main.html" class="btn btn-primary btn-default active"                                     role="button">BMW Motorarrad website </a>
+                                                  </div><!-- set primary but as link-->
+                                                </div><!-- modal-content -->
+                                                </div><!-- modal-dialog -->
+                                                </div><!-- modal -->
+                                  </div>
+                                </div>
+                              </div> <!-- emd collapsing panel 3 -->
+    
+    
+                             <div class="panel panel-default"> <!-- collapsing panel 4 --> 
+                                <div class="panel-heading">
+                                 <button type="button" class="btn btn-danger" data-toggle="collapse" href="#collapse4" data-parent="#myAccordion">
+                                  <h4 class="panel-title">
+                                    <a>
+                                     Yamaha R1 
+                                    </a>
+                                  </h4>
+                                </button>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                  <div class="panel-body">
+                                    <p>Born from MotoGP
+                                Featuring a MotoGP-developed 6-mode TCS (Traction Control System), the latest YZF-R1 is the most advanced supersport machine ever developed by Yamaha. Powered by a 998cc in-line 4-cylinder engine featuring an innovative crossplane crankshaft, the R1 kicks out high levels of linear torque which makes for superior traction. At the flick of a switch R1 riders can now tune the bike’s performance characteristics for more exciting cornering on the highway, and reduced lap times on the circuit.A compact aluminium Deltabox chassis delivers precision handling and class-leading cornering – and for optimised high speed performance the latest R1 is equipped with a new front cowl.<p id="sourceLighterText"> source:http://www.yamaha-motor.eu </p></p>
+                                      
+                                           <!-- Modal trigger button, targets myModal4 id-->
+                                            <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#myModal4">
+                                              Learn More!
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <button type="button btn-default" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title" id="myModalLabel">Yamaha R1</h4>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                    <p>Learn more http://www.yamaha-motor.eu/ie/products/motorcycles/supersport/yzf-r1.aspx</p>
+                                                  </div>
+                                                  <div class="modal-footer">
+                                                    <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
+                                                    <a href="http://www.yamaha-motor.eu/ie/products/motorcycles/supersport/yzf-r1.aspx" class="btn btn-primary btn-default active"                          role="button">Yamaha website </a>
+                                                  </div> <!-- set primary but as link-->
+                                                </div><!-- modal-content -->
+                                                </div><!-- modal-dialog -->
+                                                </div><!-- modal -->
+                                  </div>
+                                </div>
+                              </div> <!-- emd collapsing panel 4  -->
+                            
+                            
+                            <div id="push">
+                            </div>
+    
+                 
+                            </div> <!-- end of collapsing panel MyAccordion -->     
+                 
+                    
+                
+             </div> <!-- col-sm-10 end  -->
+  
+        </div> <!-- end of row -->         
+        
+</div> <!-- end flud container-->  
+
+<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="bootstrap.js"> </script>
+<link href="http://fonts.googleapis.com/css?family=Hammersmith+One|Yeseva+One' rel='stylesheet' type='text/css">    
+    
+</body>
+</html>

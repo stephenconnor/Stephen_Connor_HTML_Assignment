@@ -1,0 +1,207 @@
+<!-- ---------------------------------------------
+Program     : contactPage.html - webpage
+Written By  : Stephen Connor    
+Date        : 25/01/2014
+Decription  : Webpage - top & right nabar, contact form
+Version     : 
+----------------------------------------------- -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Stephen's Blog about Motocycling, Road Cycling & Rugby" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap-responisve.css" /> 
+    <link rel="stylesheet" tyep="text/css" href="html_stylesheet.css" />
+
+	<title>
+		Stephen's Blog
+	</title>
+    
+    <style></style>
+    
+</head>
+
+<body>
+
+
+<div class="navbar navbar-inverse navbar-static-top"> <!-- static collapsing navigation bar across top of page -->
+  <div class="navbar-inner">
+      <a href="homePage.html" class="navbar-brand"> Stephen's Blog</a>
+  	<button class="navbar-toggle" data-toggle="collapse" data-target=".navBarCollapse">
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  		<span class="icon-bar"></span>
+  	</button>
+    <div class="collapse navbar-collapse navBarCollapse navbar-right">  
+        <ul class="nav navbar-nav">  
+  			<li><a class="Home" href="homePage.html">Home</a></li>  
+  		    <li><a href="motorBikePage.html">Motorbikes</a></li>  
+  		    <li><a href="bikePage.html">Bikes</a></li>  
+  		    <li><a href="rugbyPage.html">Rugby  </a></li> 
+            <li class="active"><a href="contactPage.html">Contact Us</a></li> 
+            <br/>
+            <br/>
+		</ul> 
+	</div> 
+  </div>
+</div> <!-- navbar end -->
+
+
+
+<div class="container-fluid"> <!--  full width container for page content -->
+    
+         <div class="row"> <!-- firet row of main page content -->
+                    
+          <div class="twocol col col-sm-2"> <!-- left side page section 2 columns wide -->
+                
+                <nav class="navbar navbar-default sidebar-nav" role="navigation"> <!-- collapsing sidebar menu -->
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse1"                                         href="#collapse1">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+            
+                    <div class="collapse navbar-collapse" id="collapse1" class="sidebar-nav">
+                        <div class="panel-heading">Site Navigation</div>
+                        <ul class="nav nav-stacked">
+                            <li><a href="homePage.html">Home</a></li>
+                            <li><a href="motorBikePage.html">Motorbikes</a></li>
+                            <li><a href="bikePage.html">Road Cycling</a></li>
+                            <li><a href="rugbyPage.html">Rugby</a></li>
+                            <li class="active"><a href="contactPage.html">Contact Us</a></li>              
+                        </ul>
+            
+            
+                    </div>
+                </nav><!-- end sidebar menu -->
+            </div> <!-- end of left side page section 2 columns wide -->
+                
+<div class="tencol col col-sm-10"> <!-- main page section 10 column wide page area -->
+            
+            <div class="row">
+              
+                <div class="sixcol col col-sm-6 col-sm-offset-2" > <!-- main page section 6 column wide page area, offset from sidebar -->
+    			<div class="panel-body">
+                    <form name="contactform" method="post" action="#"> <!-- contact from with file ref for submitted data -->
+ 
+                        <table class="tencol col col-sm-10">
+ 
+                            <tr>
+                             
+                             <td valign="top">
+                             
+                              <label for="first_name" > First Name *</label>
+                             
+                             </td>
+                             
+                             <td valign="top" >
+                             
+                              <input  type="text" name="first_name" maxlength="80" size="30">
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                            <tr>
+                             
+                             <td valign="top">
+                             
+                              <label for="last_name">Last Name *</label>
+                             
+                             </td>
+                             
+                             <td valign="top">
+                             
+                              <input  type="text" name="last_name" maxlength="80" size="30">
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                            <tr>
+                             
+                             <td valign="top">
+                             
+                              <label for="email">Email Address *</label>
+                             
+                             </td>
+                             
+                             <td valign="top">
+                             
+                              <input  type="text" name="email" maxlength="80" size="30">
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                            <tr>
+                             
+                             <td valign="top">
+                             
+                              <label for="telephone">Telephone Number</label>
+                             
+                             </td>
+                             
+                             <td valign="top">
+                             
+                              <input  type="text" name="telephone" maxlength="30" size="30">
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                            <tr>
+                             
+                             <td valign="top">
+                             
+                              <label for="comments">Comments *</label>
+                             
+                             </td>
+                             
+                             <td valign="top">
+                             
+                              <textarea  name="comments" maxlength="2000" cols="40" rows="8"></textarea>
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                            <tr>
+                             
+                             <td colspan="2" style="text-align:center">
+                             
+                              <input type="submit" value="Submit">  
+                             
+                             </td>
+                             
+                            </tr>
+                             
+                         </table>
+ 
+                    </form>
+
+					</div> <!-- code from http://www.freecontactform.com/email_form.php -->
+    
+                </div>
+                </div> 
+                
+    
+</div> <!-- ein of main page section 10 column wide page area -->        
+
+</div> <!-- first row end-->
+
+
+</div> <!-- container end -->
+
+
+<script src="http://code.jquery.com/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="bootstrap.js"> </script>
+<link href="http://fonts.googleapis.com/css?family=Hammersmith+One|Yeseva+One' rel='stylesheet' type='text/css">
+    
+</body>
+</html>
